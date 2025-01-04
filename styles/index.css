@@ -12,17 +12,6 @@ body{
     background-color: #99b38f;
 }
 
-header{
-    position: sticky;
-    top: 0;
-    display: flex;
-    justify-content: space-between;
-    align-items: end;
-    height: 60px;
-    background-color: #708268;
-    
-}
-
 h1.logo{
     font-family: AthachantrTrial-Regular;
     color: white;
@@ -48,9 +37,9 @@ a:hover{
     text-decoration: underline;
 }
 
-.imagem{
+.container_imagem{
     background-color: white;
-    height: 350px;
+    height: 300px;
 }
 
 .filtros{
@@ -61,7 +50,7 @@ a:hover{
     height: 80px;
     margin-top: 20px;
     margin-bottom: 20px;
-    margin-left: 200px;
+    margin-left: 185px;
     border-radius: 50px;
     border: 0.8px solid gray;
 }
@@ -94,23 +83,30 @@ button.botoes_filtro{
 
 button.botoes_filtro:hover{
     background-color: lightgray;
+    cursor: pointer;
 }
 
 .container {
     display: grid;
     width: 80%;
     grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(5, 1fr);
+    justify-items: center;
     gap: 20px;
     background-color: #708268;
-    margin-left: 200px;
-    border-radius: 0px 0px 20px 20px;
+    margin: 0 auto 200px;
+    border-radius: 20px;
+    
 }
 
 .itens{
     width: 220px;
     height: 220px;
     background-color: white;
+}
+
+img.itens:hover{
+    transform: scale(1.20);
+    cursor: pointer;
 }
 
 footer{
