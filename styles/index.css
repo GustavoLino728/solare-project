@@ -40,6 +40,7 @@ a:hover{
 .container_imagem{
     background-color: white;
     height: 300px;
+    margin-bottom: 80px;
 }
 
 .filtros{
@@ -64,7 +65,9 @@ a:hover{
     border-radius: 50px;
 }*/
 
-.botoes_filtro{
+
+
+.botoes_filtro, .container_botoes{
     display: flex;
     width: 98%;
     align-items: center;
@@ -86,25 +89,51 @@ button.botoes_filtro:hover{
     cursor: pointer;
 }
 
+button.botoes_filtro.active {
+    background-color: #666;
+    color: white;
+}
+
 .container {
     display: grid;
     width: 80%;
     grid-template-columns: repeat(4, 1fr);
     justify-items: center;
-    gap: 20px;
+    gap: 30px;
     background-color: #708268;
     margin: 0 auto 200px;
     border-radius: 20px;
     
 }
 
+
 .itens{
+    position: relative;
     width: 220px;
     height: 220px;
     background-color: white;
+    display: none;
 }
 
-img.itens:hover{
+.itens_imagem{
+    position: relative;
+    width: 220px;
+    height: 220px;
+}
+
+.itens.show {
+    display: block;
+}
+
+.preco{
+    font-size: 24px;
+    background-color: white;
+    position: absolute;
+    bottom: 1px;
+    right: 1px;
+}
+
+.itens:hover{
     transform: scale(1.20);
     cursor: pointer;
 }
